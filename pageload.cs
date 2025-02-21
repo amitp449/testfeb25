@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace PlaywrightTests
 {
-    public class PageLoadTests
+    public class PageLoading
     {
         private IPlaywright _playwright;
         private IBrowser _browser;
