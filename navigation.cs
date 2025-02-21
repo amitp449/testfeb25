@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace PlaywrightTests
 {
-    public class NavigationTests
+    public class Navigation
     {
         private IPlaywright _playwright;
         private IBrowser _browser;
@@ -20,10 +20,10 @@ namespace PlaywrightTests
             var page = await _browser.NewPageAsync();
             await page.GotoAsync("https://qa-practice.netlify.app/bugs-form");
 
-            await page.FillAsync("input[name='First Name']", "Amit");
-            await page.FillAsync("input[name='Last Name']", "Podder");
+            await page.FillAsync("input[name='First Name']", "Code");
+            await page.FillAsync("input[name='Last Name']", "Test");
             await page.FillAsync("input[name='Phone nunber']", "1234567890");
-            await page.FillAsync("input[name='Email address']", "amitpodder@gmail.com");            
+            await page.FillAsync("input[name='Email address']", "codetest@gmail.com");            
             await page.FillAsync("input[name='Password']", "Password123");
 
             var submitButton = await page.QuerySelectorAsync("button[type='submit']");
