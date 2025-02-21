@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace PlaywrightTests
 {
-    public class BuginPage
+    public class BugsinPage
     {
         private IPlaywright _playwright;
         private IBrowser _browser;
